@@ -1,8 +1,12 @@
 import React from "react";
 
 export default function Pet(props) {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, props.name),
-    React.createElement("h2", {}, props.age),
-  ]);
+
+  return (
+    <div>
+      <h1>Name: {props.name.toUpperCase() }</h1>
+      <h1>Age: {props.age}</h1>
+    </div>
+  );
 }
+
