@@ -1,12 +1,10 @@
 import React from "react";
 
-export default function Pet(props) {
-
+export default function Pet({name, age}) {
   return (
     <div>
-      <h1>Name: {props.name.toUpperCase() }</h1>
-      <h1>Age: {props.age}</h1>
+      <h1>Name: {name}</h1>
+      <h1>Age: {age}</h1>
     </div>
   );
 }
-
